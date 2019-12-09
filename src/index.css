@@ -1,0 +1,263 @@
+/*=======================================================
+            Welcome Section
+========================================================*/
+#welcome{
+	background-image: url('/img/header.jpg');
+	min-height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    padding-top: 15rem;
+  	padding-bottom: calc(10rem - 56px);
+}
+#welcome #content-wrapper h1{	
+    font-size: 7rem;
+}
+#welcome #content-wrapper p{
+	font-size: 2rem;
+	padding-left: 15%;
+	padding-right: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+#welcome #content-wrapper a{
+	margin-top: 20px;
+}
+/* Phone screen or xs */
+@media (max-width: 767px) {
+    #welcome{
+        padding-top: 10rem;
+    }
+    #welcome #content-wrapper h1{
+        font-size: 3rem;
+    }
+    #welcome #content-wrapper p{
+        font-size: 1.2rem;
+    }
+    #welcome #content-wrapper a{
+        margin-top: 5px;
+        font-size: 1.1rem;
+    }
+}
+/*=======================================================
+            About Section
+========================================================*/
+#about{
+	min-height: 50vh;
+    width: 100%;
+    padding-top: 6.5rem;
+    padding-bottom: 10rem;
+    position: relative;
+    z-index: 1;
+}
+#about::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: top left;
+    transform: skewY(-2deg);
+    z-index: -10;
+}
+#about #content-wrapper p{
+	padding-left: 15%;
+	padding-right: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+/*=======================================================
+            Education Section
+========================================================*/
+#education{
+    min-height: 50vh;
+    width: 100%;
+    padding-top: 6.5rem;
+    padding-bottom: 10rem;
+    background-color: whitesmoke;
+}
+#education #content-wrapper .edu-img{
+    width: 100%;
+    height: 100%;
+    min-height: 150px;
+    position: relative;
+}
+#education #content-wrapper img{
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+#education #content-wrapper p{
+    font-weight: bold;
+}
+/* Phone screen or xs */
+@media (max-width: 767px) {
+    #education #content-wrapper .list-education{
+        margin-top: 10px;
+    }
+}
+/*=======================================================
+            Skills Section
+========================================================*/
+#skills{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/skills-bg.jpg');
+	min-height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    padding-top: 6.5rem;
+    padding-bottom: 10rem;
+}
+#skills #content-wrapper .progress {
+    height: 25px;
+}
+#skills #content-wrapper .progress .skill {
+    line-height: 25px;
+    padding: 0;
+    margin: 0 0 0 20px;
+    text-transform: uppercase;
+}
+#skills #content-wrapper .progress .skill .val {
+    float: right;
+    font-style: normal;
+    margin: 0 20px 0 0;
+}
+
+#skills #content-wrapper .progress-bar {
+    text-align: left;
+    transition-duration: 3s;
+}
+/*=======================================================
+            Projects Section
+========================================================*/
+#projects{
+	min-height: 50vh;
+    width: 100%;
+    padding-top: 6.5rem;
+    padding-bottom: 10rem;
+}
+#projects #content-wrapper .portfolio {
+    padding: 50px 0;
+}
+
+#projects #content-wrapper .portfolio-item {
+    margin-bottom: 30px;
+}
+
+#projects #content-wrapper .img-portfolio {
+    margin: 0 auto;
+    width: 445px;
+    height: 215px;
+}
+
+#projects #content-wrapper .img-portfolio:hover {
+	opacity: 0.8;
+}
+#projects #content-wrapper .portfolio-item {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto; 
+}
+#projects #content-wrapper .portfolio-item .portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(240, 95, 64, 0.9);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; 
+}
+#projects #content-wrapper .portfolio-item .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center; 
+}
+#projects #content-wrapper .portfolio-item .portfolio-box-caption .portfolio-box-caption-content .project-category,
+#projects #content-wrapper .portfolio-item .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; 
+}
+#projects #content-wrapper .portfolio-item .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase; 
+}
+#projects #content-wrapper .portfolio-item .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 18px; 
+}
+#projects #content-wrapper .portfolio-item:hover .portfolio-box-caption {
+    opacity: 1; 
+}
+#projects #content-wrapper .portfolio-item:focus {
+    outline: none; 
+}
+/* Phone screen or xs */
+@media (max-width: 767px) {
+    #projects #content-wrapper .list-project{
+        margin-top: 10px;
+    }
+}
+/*=======================================================
+            Working Experience Section
+========================================================*/
+#working-experience{
+    min-height: 50vh;
+    width: 100%;
+    padding-top: 6.5rem;
+    padding-bottom: 10rem;
+    background-color: whitesmoke;
+}
+#working-experience #content-wrapper .work-img{
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    position: relative;
+}
+#working-experience #content-wrapper img{
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+#working-experience #content-wrapper p{
+    font-weight: bold;
+}
+/* Phone screen or xs */
+@media (max-width: 767px) {
+    #education #working-experience-wrapper .list-working-experience{
+        margin-top: 10px;
+    }
+}

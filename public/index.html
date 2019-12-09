@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" type="image/x-icon" href="%PUBLIC_URL%/img/favicons/favicon.png" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Mohammed El Faza</title>
+    <!-- Core CSS -->
+    <link href="%PUBLIC_URL%/vendor/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="%PUBLIC_URL%/vendor/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="%PUBLIC_URL%/css/master.css" rel="stylesheet" type="text/css">
+    <!-- Plugin CSS -->
+    <link href="%PUBLIC_URL%/vendor/lightbox2/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
+    <link href="%PUBLIC_URL%/vendor/aos-2.1.1/dist/aos.css" rel="stylesheet">
+    <!-- Font -->
+    <style type="text/css">
+        /* Raleway */
+        @font-face {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 200;
+          src: url(/fonts/Raleway/Raleway-ExtraLight.ttf);
+        }
+        /* Montserrat */
+        @font-face {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 300;
+          src: url(/fonts/Montserrat/Montserrat-Light.ttf);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <!-- Custom css-->
+    <link href="%PUBLIC_URL%/css/master.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- Header -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand font-size-brand js-scroll-trigger" href="#welcome">MEF</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about" class="js-scroll-trigger">About Me</a></li>
+                    <li><a href="#education" class="js-scroll-trigger">Education</a></li>
+                    <li><a href="#skills" class="js-scroll-trigger">Skills</a></li>
+                    <li><a href="#projects" class="js-scroll-trigger">Projects</a></li>
+                    <li><a href="#working-experience" class="js-scroll-trigger">Working Experience</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div id="root"></div>
+
+    <!-- Footer -->
+    <div class='scrolltop'>
+        <div class='scroll icon'>
+            <i class="fa fa-4x fa-angle-up"></i>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Contact</h3>
+                        <h4><i class="fa fa-fw fa-envelope"></i> elfazamuhammad1@gmail.com </h4>
+                        <h4><i class="fa fa-lg fa-fw fa-mobile"></i> 081-1919-8307 </h4>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>YOU CAN FIND ME ON</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/elfazamania" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Melfaza" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/mohammed-el-faza-39625413b/" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/elfaza/" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Me</h3>
+                        <p class="text-justify">Hello! My name is Mohammed El Faza. You can call me Faza. I was born in Jakarta on 20 November 1996. Currently I am studying Information Technology at SGU.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Mohammed El Faza 2018
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+      <!-- Core JavaScript -->
+      <script src="%PUBLIC_URL%/vendor/jquery-3.2.1/jquery-3.2.1.min.js"></script> 
+      <script src="%PUBLIC_URL%/vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script> 
+      <script src="%PUBLIC_URL%/vendor/jquery-easing/jquery.easing.min.js"></script> 
+      <script src="%PUBLIC_URL%/js/master.js"></script>
+      <!-- Plugin JS -->
+      <script src="%PUBLIC_URL%/vendor/lightbox2/dist/js/lightbox.min.js"></script>
+      <script src="%PUBLIC_URL%/vendor/aos-2.1.1/dist/aos.js"></script>
+  </body>
+</html>

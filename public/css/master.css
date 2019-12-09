@@ -1,0 +1,220 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    width: 100%;
+    height: 100%;
+}
+h1{
+	text-transform: uppercase;
+	font-weight: 600;
+}
+hr {
+    max-width: 100px;
+    border-width: 3px;
+    border-color: #F05F40; 
+    padding-top: 30px;
+}
+.text-tomato{
+    color:#F05F40;
+}
+.text-white{
+    color: #ffffff;
+}
+.text-faded{
+    color: rgba(255, 255, 255, 0.7);
+}
+.font-size-brand{
+    font-size: 30px;
+}
+.bg-tomato{
+    background-color: #F05F40;
+}
+.btn-xl {
+    padding: 1rem 2rem; 
+}
+.btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 300px;
+}
+.btn-primary {
+    background-color: #F05F40;
+    border-color: #F05F40; 
+}
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active {
+    color: #fff;
+    background-color: #ee4b28; 
+    box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5);
+}
+/*=======================================================
+            Custom Navbar
+========================================================*/
+#mainNav.navbar-default {
+    background:transparent;
+    border-bottom: none;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s
+}
+#mainNav.navbar-default .navbar-brand{
+    color: #ffffff;
+}
+#mainNav.navbar-default .navbar-nav li a{
+    font-weight: bold;
+    color: #ffffff;
+}
+#mainNav.navbar-default .navbar-nav li a:hover,
+#mainNav.navbar-default .navbar-nav li a:focus,
+#mainNav.navbar-default .navbar-nav li.active a{
+    background: transparent;
+    color: #F05F40;
+}
+#mainNav.navbar-default .navbar-nav>.open>a, 
+#mainNav.navbar-default .navbar-nav>.open>a:focus, 
+#mainNav.navbar-default .navbar-nav>.open>a:hover{
+    background-color: transparent;
+    color:#ffffff;
+}
+#mainNav.navbar-default .navbar-nav .dropdown-menu{
+    background-color: transparent;
+}
+
+#mainNav.navbar-shrink {
+    background: rgb(255, 255, 255);
+    border-bottom: 1px lightgrey solid;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s
+}
+#mainNav.navbar-shrink .navbar-brand{
+    color: #000000;
+}
+#mainNav.navbar-shrink .navbar-nav li a{
+    font-weight: bold;
+    color: #000000;
+}
+#mainNav.navbar-shrink .navbar-nav li a:hover,
+#mainNav.navbar-shrink .navbar-nav li a:focus,
+#mainNav.navbar-shrink .navbar-nav li.active a{
+    background: transparent;
+    color: #F05F40;
+}
+#mainNav.navbar-shrink .navbar-nav>.open>a, 
+#mainNav.navbar-shrink .navbar-nav>.open>a:focus, 
+#mainNav.navbar-shrink .navbar-nav>.open>a:hover{
+    background-color: rgb(255, 255, 255);
+    color:#000000;
+}
+#mainNav.navbar-shrink .navbar-nav .dropdown-menu{
+    background-color: rgb(255, 255, 255);
+}
+/*=======================================================
+            Footer
+========================================================*/
+footer {
+    color: white;
+}
+footer h3 {
+  margin-bottom: 30px;
+}
+footer .footer-above {
+  padding-top: 50px;
+  background-color: rgb(51, 51, 51);
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: rgb(26, 26, 26);
+}
+.btn-outline {
+  color: white;
+  font-size: 20px;
+  border: solid 2px white;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  color: #F05F40;
+  background: white;
+  border: solid 2px white;
+}
+.btn-social {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+/*=======================================================
+            Loader
+========================================================*/
+#loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-image: url('/img/page-loader.svg');
+    background-position: center;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+}
+/*=======================================================
+            Button to Top
+========================================================*/
+.scrolltop {
+    display:none;
+    width:100%
+    margin:0 auto;
+    position:fixed;
+    bottom:40px;
+    right:2px;
+    z-index: 1;  
+}
+.scroll {
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    background:rgba(240,95,64,0.8);
+    padding:15px;
+    text-align: center;
+    margin: 0 0 0 0;
+    cursor:pointer;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;    
+}
+.scroll:hover {
+    background:rgba(240,95,64,1);
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;    
+}
+.scroll:hover .fa {
+   padding-top:-10px;
+}
+.scroll .fa {
+    font-size:30px;
+    color:#ffffff;
+    margin-top:-5px;
+    margin-left:1px;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;  
+}
